@@ -18,5 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('find-near-location', [FindLocationController::class, 'index']);
-Route::get('cek-radius-jarak-km', [FindLocationController::class, 'cekradius']);
+// Route::get('find-near-location', [FindLocationController::class, 'index']);
+// Route::get('cek-radius-jarak-km', [FindLocationController::class, 'cekradius']);
+Route::get('get-data-berdasarkan-radius-km', [FindLocationController::class, 'getLongitudeLatitude']);
